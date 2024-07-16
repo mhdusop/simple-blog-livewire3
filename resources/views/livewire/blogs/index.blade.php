@@ -29,10 +29,10 @@ Data Blogs
                             @forelse ($blogs as $blog)
                             <tr>
                                 <td class="text-center">
-                                    <img src="{{ asset('/storage/blog/'.$post->image) }}" class="rounded" style="width: 150px">
+                                    <img src="{{ asset('/storage/blogs/'.$blog->banner) }}" class="rounded" style="width: 150px">
                                 </td>
                                 <td>{{ $blog->title }}</td>
-                                <td>{!! $blog->content !!}</td>
+                                <td>{{ $blog->content }}</td>
                                 <td class="text-center">
                                     <a href="/edit/{{ $blog->id }}" wire:navigate class="btn btn-sm btn-primary">Edit</a>
                                     <button class="btn btn-sm btn-danger">Delete</button>
