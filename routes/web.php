@@ -15,3 +15,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', App\Livewire\Blogs\Index::class)->name('blogs.index');
 Route::get('/create', App\Livewire\Blogs\Create::class)->name('blogs.create');
+Route::get('/edit/{id}', App\Livewire\Blogs\Edit::class)->name('blogs.edit');

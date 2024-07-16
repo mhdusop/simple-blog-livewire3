@@ -34,8 +34,8 @@ Data Blogs
                                 <td>{{ $blog->title }}</td>
                                 <td>{{ $blog->content }}</td>
                                 <td class="text-center">
-                                    <a href="/edit/{{ $blog->id }}" wire:navigate class="btn btn-sm btn-primary">Edit</a>
-                                    <button class="btn btn-sm btn-danger">Delete</button>
+                                    <a href="/edit/{{ $blog->id }}" wire:navigate class="btn btn-sm btn-warning">Edit</a>
+                                    <button wire:click="destroy({{ $blog->id }})" class="btn btn-sm btn-danger">Delete</button>
                                 </td>
                             </tr>
                             @empty
